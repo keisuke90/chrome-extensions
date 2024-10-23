@@ -1,0 +1,19 @@
+{
+  "name": "Auto Show Transcript",
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Automatic display of youtube transcription",
+  "permissions": ["activeTab", "scripting"],
+  "commands": {
+    "run-show-transcript": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T",
+        "mac": "MacCtrl+Shift+T"
+      },
+      "description": "show transcript"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
